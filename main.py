@@ -29,6 +29,6 @@ def run():
     bot.remove_webhook()
     bot.set_webhook(url=os.environ.get("RENDER_EXTERNAL_URL") + '/' + BOT_TOKEN)
 
-if name == '__main__':
+if __name__ == '__main__':
     run()
     app.run(host="0.0.0.0", port=10000)
